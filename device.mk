@@ -97,14 +97,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.postproc@1.0.vendor \
     android.frameworks.stats@1.0.vendor
 
-# Dolby Manager
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio/oneplus9/multimedia_dolby_dax_default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/multimedia_dolby_dax_default.xml \
-    $(LOCAL_PATH)/configs/audio/oneplus9pro/multimedia_dolby_dax_default.xml:$(TARGET_COPY_OUT_ODM)/overlay/prj_11/odm/etc/dolby/multimedia_dolby_dax_default.xml
-
-PRODUCT_PACKAGES += \
-    DolbyManager
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
@@ -154,7 +146,6 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/media/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml \
     $(LOCAL_PATH)/configs/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml
 
 # NFC
